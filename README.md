@@ -3,6 +3,10 @@
 Deux pages statiques autonomes, aucune étape de build :
 - `index.html` — landing (VSL + quiz + formulaire)
 - `merci.html` — page de remerciement (`/merci`) avec Calendly, atteinte uniquement après une soumission réussie
+- `confidentialite.html` — politique de confidentialité (`/confidentialite`, Loi 25)
+- `conditions.html` — conditions d'utilisation (`/conditions`)
+
+Le pied de page des quatre pages inclut la mention de non-affiliation à Meta / Facebook.
 
 ## Déployer sur Vercel
 1. Pousser ce dossier à la racine du dépôt `charlesdumont-web/Sales-Funnel` (branche `main`).
@@ -16,5 +20,5 @@ Deux pages statiques autonomes, aucune étape de build :
 
 ## À faire avant la campagne
 - **Destination du formulaire** : la page envoie un POST JSON (prénom, nom, entreprise, courriel, téléphone, taille, rôle, échéancier, source, page, submittedAt) vers `webhookUrl`. Actuellement vide → les coordonnées ne sont conservées que dans le préremplissage Calendly. Fournir une URL (Make / n8n / Zapier / Formspree) et régénérer la page.
-- Remplacer les liens `#` du pied de page (confidentialité, conditions).
+- Faire relire les pages `/confidentialite` et `/conditions` (contact, durée de conservation, fournisseurs) avant la mise en ligne.
 - Tester les événements avec l'extension Meta Pixel Helper, puis envoyer l'URL finale à l'agence.
